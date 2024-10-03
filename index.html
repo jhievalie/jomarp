@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="header-container">
+            <nav>
+                <span class="logo">Portfolio.</span>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+    
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Hello, It's Me</h1>
+                    <h2><span>Jomar</span></h2>
+                    <p>And I'm a <span>Data Analyst</span></p>
+                </div>
+                <div class="header-image-container">
+                    <!-- <img src="images/Anime3 (3).png" alt="Jomar" class="header-image"> -->
+                    <img src="images/me.png" alt="Jomar" class="header-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-----about----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my_laptop - Copy.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About ME</h1>
+                    <p>I’m a detail-oriented data analyst and administrative assistant with a strong background in data entry, management, and automation. With years of experience working remotely, I’ve honed my skills in Excel, Google Sheets, and Shopify, making me highly efficient in handling large datasets and streamlining workflows. My expertise lies in improving operational processes by leveraging data-driven insights and optimizing tasks through automation.<br><br>
+                        I’m passionate about finding creative solutions to complex problems, and I thrive in dynamic, fast-paced environments. My goal is to consistently deliver accurate, insightful reports and help businesses make informed decisions. Currently, I work flexible night shifts, balancing multiple projects while ensuring a smooth and productive workday for clients.</p>
+                        
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Tools</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Google Sheets & MS Excel</span><br>Data Analysis, Entry, Validation, and Normalization</li>
+                            <li><span>SQL</span><br>Experience in creating queries and managing databases</li>
+                            <li><span>Shopify & Looker Studio</span><br>Proficient in eCommerce platforms and data visualization</li>
+                            <li><span>Google Analytics & Ads Managers</span><br>Analyzing web traffic and optimizing online ads</li>
+                            <li><span>Amazon & Power BI</span><br>Building reports and dashboards for business insights</li>
+                        </ul>
+                    </div>
+                    
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Part-time Project Data Analyst</span><br>Automated data analysis tasks, improved accuracy, and developed performance dashboards.</li>
+                            <li><span>Administrative Assistant</span><br>Developed reports, trained new employees, and improved administrative processes for the City Government of Antipolo.</li>
+                            <li><span>Revenue Collection Clerk</span><br>Handled cash transactions and provided customer support for the City Government of Antipolo.</li>
+                        </ul>
+                    </div>
+                    
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>MS Excel & Google Sheets</span><br>Expert in creating reports, formulas, and managing data</li>
+                            <li><span>Looker Studio & Power BI</span><br>Data visualization and business intelligence tools</li>
+                            <li><span>Shopify & Amazon</span><br>Experience in managing eCommerce platforms</li>
+                            <li><span>Google Analytics & Ads Manager</span><br>Expertise in web traffic analysis and ad campaign management</li>
+                            <li><span>SQL</span><br>Data query and database management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----services---- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-chart-pie"></i>
+                    <h2>Data Analysis</h2>
+                    <p>I provide comprehensive data analysis services, helping you derive actionable insights and make data-driven decisions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-file-alt"></i>
+                    <h2>Data Entry</h2>
+                    <p>Accurate and efficient data entry services to ensure your data is correctly recorded and organized for analysis.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code-branch"></i>
+                    <h2>Scraping with Selenium</h2>
+                    <p>Web scraping services using Selenium to extract data from various websites and automate data collection.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----portfolio----- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/img1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Part-time Project Data Analyst</h3>
+                        <p>Automated data analysis tasks, improved accuracy, and developed performance dashboards. Helped businesses optimize decision-making processes using data insights.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/img2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Administrative Assistant</h3>
+                        <p>Developed reports, trained new employees, and improved administrative processes for the City Government of Antipolo. Managed large datasets and assisted in project coordination.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/img3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Revenue Collection Clerk</h3>
+                        <p>Handled cash transactions and provided customer support for the City Government of Antipolo. Improved documentation processes and facilitated smooth revenue collection operations.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----contact----- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>jomarpajenago@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+639567092024</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ararniimim"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/vampot"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/jhiepajenago/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jomarpajenago21"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="file/CV_Jomar Pajenago.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+        </svg>
+    </button>
+
+    <div class="copyright">
+        <p>Copyright &#169; T&#45;Shop <i class="fas fa-heart"></i> by Me</p>
+    </div>
+
+
+
+
+    <!-- -----scriprt----- -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0"
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxp_mt18ZDdge2QkVI4-H6LUhYufdpbG_j6cSDzAeeoRxrLGZfKq3LGFsf4kFGfk-fu/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 1000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+
+        const showOnPx = 100;
+        const backToTopButton = document.querySelector(".back-to-top")
+
+        const scrollContainer = () => {
+            return document.documentElement || document.body;
+        };
+
+        document.addEventListener("scroll", () => {
+            if (scrollContainer().scrollTop > showOnPx) {
+                backToTopButton.classList.remove("hidden")
+            } else {
+                backToTopButton.classList.add("hidden")
+            }
+        })
+
+
+        const goToTop = () => {
+            document.body.scrollIntoView();
+            behavior = "smooth"
+        };
+
+        backToTopButton.addEventListener("click", goToTop)
+
+    </script>
+
+</body>
+
+</html>
